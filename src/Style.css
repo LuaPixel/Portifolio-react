@@ -2,59 +2,171 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Remove rolagem horizontal somente neste container */
+    
+   
 }
 
-.luana{
-    margin-top: 15rem;
-    margin-left: 8rem;
-    
+.luana{ 
+    margin-top: 5rem;
+    margin-left: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    padding-bottom: 100px;
+    overflow-x: hidden; /* Remove rolagem horizontal somente neste container */ 
+
 
 }
+
+@media (min-width: 576px) and (max-width: 991px ){
+    .luana{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        flex-direction: column;
+    }   
+
+    .ilus{
+        max-width: 400px;
+
+
+        
+    }
+
+
+    
+    .d-flex{
+        flex-direction: column;
+    }
+
+    .code{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .desen{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .work{
+
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 5rem;
+    }
+    
+
+
+
+}
+
+@media (max-width: 575px){
+    .luana{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        flex-direction: column;
+    }   
+
+    .ilus{
+        max-width: 400px;
+        flex-direction: column;
+
+        
+    }
+
+
+    
+    .d-flex{
+        flex-direction: column;
+    }
+
+    .code{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .desen{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .work{
+
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 5rem;
+    }
+    
+
+    
+}
+
+
+.ilusImg{
+    height: 500px;
+    margin-top: 5rem;
+}
+
+
+
+
 
 .code{
     color: rgb(175, 1, 175); /* Cor ao passar o mouse */
     text-shadow: 0 0 35px rgb(135, 11, 154), 0 0 50px purple, 0 0 15px purple; /* Efeito neon */
     width: 100%;
-    padding: 20px;
+    margin: 0 auto;
+    padding: 50px;
     font-size: 60px;
-    margin-left: 55px;
+
     
 }
 
 .desen{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     cursor: context-menu;
-    margin-left: 32px;
+    margin-left: 10px;
 }
 
 
 .icons {
-
-    gap: 20px;
+    gap: 50px;
     align-items: center;
-    margin-left: 11rem;
-    transition-duration: transform 0.8s easy, filter 0.8s easy;
+    justify-content: center;
+    height: 10rem;
+    margin: 0; /* Remove margens externas */
+    padding: 0;
 
 }
 
-.linke{
+.linke, .git{
     border-radius: 90%;
-    width: 50px;
-  
+    max-width: 50px;
+    width: 100%;
+    border: 2px solid white;
+
 }
 
-.git{
-    border-radius: 90%;
-    width: 50px;
+
+.hreff{
+    padding: 50px;
 }
+
 
 .icons img:hover {
     transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% */
-    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5), /* Luz suave */
-    0 0 30px rgba(128, 0, 128, 1), /* Luz intensa */
-    0 0 30px rgba(128, 0, 128, 1); /* Luz intensa */
+    box-shadow: 
+        0 0 10px rgba(128, 0, 128, 0.5), /* Luz suave */
+        0 0 30px rgba(128, 0, 128, 1), /* Luz intensa */
+        0 0 40px rgba(128, 0, 128, 1); /* Luz intensa com maior difusão */
 }
 
 .work{
@@ -63,12 +175,11 @@
     transition: duration 1.5s;
     background-color: #d0d0d0 ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace; 
-    width: 50%;
     height: 75px;
     font-size: x-large;
-
-
 }
+
+
 
 .work:hover{
     background-color: rgb(244, 170, 215) ;
@@ -81,38 +192,54 @@
 
 
 .lua{
+    margin:  0 auto;
     border-radius: 5rem;
-    width: 20%;
-    height: 20%;
-    margin-left: 10rem;
-    
+    margin-top: 2rem;
+    max-width: 400px;
 }
 
 
+
+@media (min-width: 375px) and (max-width: 991px ){
+    .sobre{
+        width: 100%;
+
+    }
+
+    .lua{
+        max-width: 360px;
+        margin-top: 1rem;
+        height: 20%;
+    }
+}
+
+
+
+
+
 .sobre{
-    margin-left: 8rem;
+    margin-top: 5rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
-
-.verMais{
-    width: 9rem;
-    height: 2rem;
-    border-radius: 2rem;
+.Sobre{
+    padding-bottom: 200px;
+    overflow-x: hidden; /* Remove rolagem horizontal somente neste container */
 }
 
-.verMais:hover{
-    color:blue;
-}
+
+
+
 
 
 .ilus{
-    height: 30rem;
-    border-radius: 10rem;
-    margin-top: 11rem;
-    margin-left: 2rem;
-    transition: scale (0.8s) ;
+    margin:  0 auto;
+    border-radius: 5rem;
+    margin-top: 5rem;
+    max-width: 400px;
+    transition: transform 1s ease ;
+    margin-bottom: 2rem;
 }
 
 .ilus:hover{
@@ -123,13 +250,93 @@
     width: 7rem;
     height: 30px;
     border-radius:2rem ;
+    margin-bottom: 1rem;
 }
 
 .x:hover{
     color: rgba(128, 0, 128, 1) ;
+    text-shadow: 0 0 25px rgb(135, 11, 154), 0 0 50px purple, 0 0 15px purple; /* Efeito neon */
 }
 
 
+.Projetos{
+    padding-bottom: 100px;
+    overflow: hidden; /* Remove rolagem horizontal somente neste container */
+    max-width: 100%;
+}
+
 .cardImg{
-    width: 30rem;
+    width: 25rem;
+    
+}
+
+.card{
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    transition: transform 1s ease;
+    background-color:  rgb(0, 0, 0);
+    border:2px solid white;
+    color: #fff;
+    max-width: 100%;
+    height: 35rem; 
+    margin-top: 30px;
+}
+
+@media (max-width: 1399px)  {
+    .cards{
+        overflow-y: hidden;
+        width: 100%;
+        height: auto;
+        border:5px solid white;
+        padding: 0;
+        margin: 0;
+      
+    }
+
+    .card{
+        height: auto;
+        width: 90%;
+        overflow-y: hidden;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    }
+
+    .cardImg{
+        align-items: center;
+        width: 100%;
+    } 
+}
+
+
+
+
+
+
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.verImagem{
+    color: rgb(255, 255, 255); /* Cor ao passar o mouse */
+    text-shadow: 0 0 35px rgb(135, 11, 154), 0 0 50px purple, 0 0 15px purple; /* Efeito neon */
+}
+
+.verImagem:hover{
+    color: rgb(221, 0, 221) ;
+}
+
+.cards{
+    gap: 5rem;
+    height: 90rem;
+    max-width: 100%;
+    width: 100%;
+    
+}
+
+.card-body{
+    margin-left:10px ;
 }

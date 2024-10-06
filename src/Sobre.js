@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 
-import Lua from "./Lua.jpg";
+import Lua from "./asstes/Lua.jpg";
 
 export default function Sobre(){
     const [showMore, setShowMore] = useState (false);
     return(
 
-        <main class="d-flex flex-column mb-5 bg-black text-white ">
+        <main class="d-flex flex-column bg-black text-white Sobre">
 
         <div class="d-flex">
             <div class="col-6 sobre" id="#moreInfo">
@@ -26,7 +26,7 @@ export default function Sobre(){
                 )}
             </div>
 
-            <img src={Lua} class="lua col-6"/>
+            <img src={Lua} class="lua col-sm-12 col-lg-6 col-md-6"/>
         </div>
 
 
