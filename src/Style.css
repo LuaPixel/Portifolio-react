@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.luana{
+    margin-top: 15rem;
+    margin-left: 8rem;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+.code{
+    color: rgb(175, 1, 175); /* Cor ao passar o mouse */
+    text-shadow: 0 0 35px rgb(135, 11, 154), 0 0 50px purple, 0 0 15px purple; /* Efeito neon */
+    width: 100%;
+    padding: 20px;
+    font-size: 60px;
+    margin-left: 55px;
+    
+}
+
+.desen{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: context-menu;
+    margin-left: 32px;
+}
+
+
+.icons {
+
+    gap: 20px;
+    align-items: center;
+    margin-left: 11rem;
+    transition-duration: transform 0.8s easy, filter 0.8s easy;
+
+}
+
+.linke{
+    border-radius: 90%;
+    width: 50px;
+  
+}
+
+.git{
+    border-radius: 90%;
+    width: 50px;
+}
+
+.icons img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone em 10% */
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5), /* Luz suave */
+    0 0 30px rgba(128, 0, 128, 1), /* Luz intensa */
+    0 0 30px rgba(128, 0, 128, 1); /* Luz intensa */
+}
+
+.work{
+
+    border-radius: 2rem;
+    transition: duration 1.5s;
+    background-color: #d0d0d0 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace; 
+    width: 50%;
+    height: 75px;
+    font-size: x-large;
+
+
+}
+
+.work:hover{
+    background-color: rgb(244, 170, 215) ;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5), /* Luz suave */
+    0 0 60px rgba(128, 0, 128, 1), /* Luz intensa */
+    0 0 80px rgba(128, 0, 128, 1); /* Luz intensa */
+
+}
+
+
+.lua{
+    border-radius: 5rem;
+    width: 20%;
+    height: 20%;
+    margin-left: 10rem;
+    
+}
+
+
+.sobre{
+    margin-left: 8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+.verMais{
+    width: 9rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+
+.verMais:hover{
+    color:blue;
+}
+
+
+.ilus{
+    height: 30rem;
+    border-radius: 10rem;
+    margin-top: 11rem;
+    margin-left: 2rem;
+    transition: scale (0.8s) ;
+}
+
+.ilus:hover{
+    transform: scale(1.1);
+}
+
+.x{
+    width: 7rem;
+    height: 30px;
+    border-radius:2rem ;
+}
+
+.x:hover{
+    color: rgba(128, 0, 128, 1) ;
+}
+
+
+.cardImg{
+    width: 30rem;
+}
