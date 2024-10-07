@@ -12,8 +12,6 @@ import Style from "./Style.css"
 
 import Lua from "./asstes/Lua.jpg";
 
-import Progr from "./asstes/prog.jpg";
-
 import ilus from "./asstes/ilus.jpg";
 
 import uber from "./asstes/uber.png";
