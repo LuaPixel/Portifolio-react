@@ -12,9 +12,10 @@
     margin-top: 5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow-x: hidden; /* Remove rolagem horizontal somente neste container */ 
-    width: 60%;
+    width: 50%;
     cursor: context-menu;
     margin-bottom: 20rem;
+    height: 70vh;
 }
 
 
@@ -26,8 +27,6 @@
     margin: 0 auto;
     padding: 50px;
     font-size: 60px;
-
-    
 }
 
 .desen{
@@ -50,9 +49,8 @@
 
 .linke, .git{
     border-radius: 90%;
-    max-width: 50px;
-    width: 100%;
-    border: 2px solid white;
+    width: 50px;
+    border: 1px solid white;
 
 }
 
@@ -77,9 +75,10 @@
     transition: duration 1.5s;
     background-color: #d0d0d0 ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Courier, monospace; 
-    height: 85px;
+    height: 95px;
     font-size: x-large;
-    width: 90%;
+    width: 80%;
+    overflow: hidden;
 
     
 }
@@ -97,14 +96,18 @@
 
 
 .lua{
-    margin:  0 auto;
     border-radius: 5rem;
-    margin-top: 2rem;
+
+    height: 450px;
 }
 
 
+
+
 .sobre{
-    margin-top: 5rem;
+    line-height: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
@@ -116,13 +119,19 @@
 }
 
 
+
 .ilusImg{
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
     margin-top: 5rem;
-    height: 800px;
+    
 }
 
 .ilus{
-    border-radius: 5rem;
+    border-radius: 6rem;
+    max-width: 85%;
+    height: auto;
     transition: transform 1s ease;
 }
 
@@ -135,6 +144,7 @@
     height: 30px;
     border-radius:2rem ;
     margin-bottom: 1rem;
+    overflow-y: hidden;
 }
 
 .x:hover{
@@ -150,23 +160,18 @@
 }
 
 .cardImg{
-    width: 25rem;
+    max-width: 100%;
     
 }
 
 .card{
-
     transition: transform 1s ease;
     background-color:  rgb(0, 0, 0);
     border:2px solid white;
     color: #fff;
-
     height: 35rem; 
-
+    
 }
-
-
-
 
 
 .card:hover{
@@ -176,6 +181,7 @@
 .verImagem{
     color: rgb(255, 255, 255); /* Cor ao passar o mouse */
     text-shadow: 0 0 35px rgb(135, 11, 154), 0 0 50px purple, 0 0 15px purple; /* Efeito neon */
+    border: 2px solid white;
 }
 
 .verImagem:hover{
@@ -183,11 +189,13 @@
 }
 
 .cards{
-
-    height: 90rem;
-
-
-    
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: 0 auto;
+    border: 5px solid white;
+    height: 90rem; 
+    gap: 5rem;
 }
 
 .card-body{
@@ -197,13 +205,13 @@
 
 
 
-@media (min-width: 300px) and (max-width: 768px ){
+@media (min-width: 300px) and (max-width: 991px ){
     .luana{
         width: 100%;
         margin: 0;
         padding: 0;
         flex-direction: column;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         align-items: center;
         justify-content: center;
     }   
@@ -215,23 +223,25 @@
     }
 
     .ilusImg{
+        justify-content: center;
         align-items: center;
-        margin: 0;
         width: 100%;
-        height: 500px;
+        height: 800px;
     }
 
     .ilus{
-        margin-top: 2rem;
-        overflow-y: hidden;
-        max-width: 400px;
+        
+        width: 80%;
         flex-direction: column;
+        height: auto;
     }
 
     .lua{
+        margin: 0 auto;
         align-items: center;
         justify-content: center;
-        max-width: 30rem;
+        max-width: 70%;
+        margin-top: 3rem;
     }
 
     
@@ -265,7 +275,6 @@
     .card{
         display: flex;
         margin-top: 3rem;
-
         width: 30rem;
         justify-content: center;
         align-items: center;
@@ -273,41 +282,44 @@
 
 
     .sobre{
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 5rem;
         font-size: larger;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
 
 
-@media (min-width: 769px) and (max-width: 1600px ){
-    .work{
-        max-width: 30rem;
-    }
-    .luana{
-        width: 50% ;
-    }
-    .ilus{
-        width: 35rem;
-        justify-content: center;
+
+
+@media (min-width: 1600px){
+    .sobreLua{
+
+        width: 80%;
+        justify-content: space-between;
         align-items: center;
-        display: flex;
+        margin: 0 auto;
     }
-    .ilusImg{
-        width: 55rem;
-        align-items: center;
-        justify-content: center;
-    }
+
     .desen{
-        margin-left: 3rem;
+        font-size: 2rem;
     }
 
-    .lua{
-        width: 30rem;
+    .icons{
+        overflow-y: hidden;
     }
 
+    .linke , .git{
+        width: 70px;
+    }
+
+    .code{
+        font-size: 5rem;
+    }
 }
-
 
 
 

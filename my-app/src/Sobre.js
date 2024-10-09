@@ -8,8 +8,8 @@ export default function Sobre(){
 
         <main className="d-flex flex-column bg-black text-white Sobre">
 
-        <div className="d-flex">
-            <div className="col-6 sobre">
+        <div className="d-flex sobreLua">
+            <div className="col-md-12 col-lg-6 sobre">
                 <h1>Sobre Mim</h1>
                 <p>
                 Sou Luana Bento, uma desenvolvedora front-end apaixonada por criar experiências web envolventes e funcionais. Meu objetivo é transformar ideias em interfaces que sejam intuitivas e visualmente atraentes. Utilizo tecnologias como HTML, CSS e JavaScript para construir sites responsivos e dinâmicos, sempre buscando as melhores práticas para entregar soluções de alta qualidade.
@@ -26,7 +26,7 @@ export default function Sobre(){
                 )}
             </div>
 
-            <img src={Lua} className="lua d-flex flex-column" alt="minha foto"/>
+            <img src={Lua} className="lua d-flex" alt="minha foto"/>
 
         </div>
 

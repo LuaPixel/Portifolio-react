@@ -8,9 +8,9 @@ export default function Projetos(){
             
             
 
-            <div className=" cards ">
+            <div className="cards">
                 
-                <div className="col-lg-4 col-md-12 d-flex card flex-column">
+                <div className="col-lg-4 col-md-6 d-flex card">
                     <div className="card-body">
                         <img src={uber} className="cardImg  d-flex" alt="Header uber"/>
                         <h5 className="card-title">Cabeçalho da Uber</h5>
@@ -21,9 +21,11 @@ export default function Projetos(){
 
 
                 
-                <div className="col-lg-4  d-flex card ">
+                <div className="col-lg-4 col-md-6 d-flex card">
                     <div className="card-body ">
+
                         <img src={tail} className="cardImg d-flex" alt="Projeto tailwind" />
+
                         <h5 className="card-title">Tela de Login</h5>
                         <p>Neste projeto, desenvolvi uma tela de login utilizando Tailwind CSS, uma biblioteca de CSS que permite um design responsivo e estiloso de forma eficiente. O foco principal foi criar uma interface amigável e intuitiva para os usuários, garantindo que o processo de login fosse simples e direto.</p>
                         <a href="https://raw.githubusercontent.com/LuaPixel/Portif-lio-react/refs/heads/master/src/asstes/tail.png" className="btn verImagem" target="_blank" rel="noopener noreferrer">Ver Imagem</a>
