@@ -31,6 +31,16 @@ export default function Projetos(){
                         <a href="https://raw.githubusercontent.com/LuaPixel/Portif-lio-react/refs/heads/master/src/asstes/tail.png" className="btn verImagem" target="_blank" rel="noopener noreferrer">Ver Imagem</a>
                     </div>
                 </div>
+
+                <div className="col-lg-4 col-md-6 d-flex card">
+                    <div className="card-body">
+                        <img src={uber} className="cardImg  d-flex" alt="lista de tarefas"/>
+                        <h5 className="card-title">Lista de Tarefas</h5>
+                        <p >Neste projeto, tive a oportunidade de desenvolver uma tela que reproduz o cabeçalho do aplicativo Uber, utilizando princípios de design e desenvolvimento front-end. O objetivo principal foi entender a estrutura e a funcionalidade de um layout de aplicativo popular, ao mesmo tempo em que explorei a aplicação de cores e tipografia para criar uma interface atraente.</p>
+                        <a href="https://raw.githubusercontent.com/LuaPixel/Portif-lio-react/refs/heads/master/src/asstes/uber.png" className="btn verImagem" target="_blank" rel="noopener noreferrer" >Ver Imagem</a>
+                    </div>
+                </div>
+
             </div>
 
 
