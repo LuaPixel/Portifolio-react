@@ -1,7 +1,0 @@
-{
-    "rules": {
-      "no-unused-vars": "warn", // Avisar, mas não falhar no deploy
-      "react/prop-types": "off" // Se você não estiver usando prop-types, pode desativar essa regra
-    }
-  }
-   
