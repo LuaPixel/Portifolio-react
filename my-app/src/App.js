@@ -22,6 +22,8 @@ import tail from "./asstes/tail.png";
 
 import Projetos from "./Projetos.js"
 
+import projetoForm from "./projetoForm.js"
+
 
 function App() {
   return (

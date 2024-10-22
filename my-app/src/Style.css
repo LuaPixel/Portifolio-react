@@ -16,6 +16,7 @@
     cursor: context-menu;
     margin-bottom: 20rem;
     height: 70vh;
+    overflow-y: hidden;
 }
 
 
@@ -27,12 +28,13 @@
     margin: 0 auto;
     padding: 50px;
     font-size: 60px;
+    overflow-y: hidden;
 }
 
 .desen{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     cursor: context-menu;
-    
+    overflow-y: hidden;
     
 }
 
@@ -129,8 +131,10 @@
 }
 
 .ilus{
+
     border-radius: 6rem;
     max-width: 85%;
+    width: 50%;
     height: auto;
     transition: transform 1s ease;
 }
