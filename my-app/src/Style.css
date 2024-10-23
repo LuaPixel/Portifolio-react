@@ -213,6 +213,25 @@
 }
 
 
+.feedback{
+    display: grid;
+    justify-content: center;
+    line-height: 1.6rem;
+    font-size: large;
+}
+
+.feedback, h1{
+    overflow: hidden;
+}
+
+
+
+.textarea{
+    border-radius: 1rem;
+    height: 5rem;
+}
+
+
 
 
 @media (min-width: 300px) and (max-width: 991px ){

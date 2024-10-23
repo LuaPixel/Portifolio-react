@@ -24,6 +24,7 @@ import Projetos from "./Projetos.js"
 
 import projetoForm from "./projetoForm.js"
 
+import Feedback from './Feedback.js';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
     <Main/>
     <Sobre/>
     <Projetos/>
+    <Feedback/>
   </div>
   );
 }
