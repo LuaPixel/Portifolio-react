@@ -1,20 +1,41 @@
 import React, { useState } from "react";
 
 export default function Feedback() {
+
+    //text= vai armazenar o que o usuário digitar, de inicio ela está vazio ('')
+    //setText vai atualizar o valor de text
+    //usestate('') função do react que permite ter um estado dentro do componente, neste caso, uma string vazia de inicio
     const [text, setText] = useState(''); 
+    //responseMessage armazena a resposta aós enviar o feedback
+    //setresponseMessage atualiza o responseMessage
+    //usestate inicia como uma string vazia
     const [responseMessage, setResponseMessage] = useState(''); 
 
+        //handleInputChange função chamada sempre que o valor de text mudar. (event) = representa o novo valor
     const handleInputChange = (event) => {
+        //setText(event.target.value) aqui será atualizado o novo valor de text
+        //event.target refere ao elemento que disparou o evento
+        //event.target.value valor atual do campo de texto (que o usuário digitou)
         setText(event.target.value);
     };
 
+    //handleSubmit essa função é chamada quando o "formulário" é enviado
+    //async essa função impede que a interface trave enquanto espera uma resposta
     const handleSubmit = async (event) => {
+        //esssa linha impede que a página recarregue quando o formulário for enviado
         event.preventDefault(); 
-        console.log('Formulário enviado!');
+        //mostra no console que o formulário foi enviado
+        console.log('Feedback enviado!');
 
+        //try, tenta executar o código, se não der certo ele pula para o "catch"
         try {
+            //const response, cria uma variável (response)
+            //= await fetch () diz para quardar em response o resultado de fecth
             const response = await fetch('http://localhost/banco/index.php', {
+                //POST é usado para enviar os dados para o servidor
                 method: 'POST',
+                //
+                //content-type diz que os dados que serão enviados estão no formato json
                 headers: {
                     'Content-Type': 'application/json',
                 },
