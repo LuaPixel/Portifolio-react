@@ -22,8 +22,6 @@ import tail from "./asstes/tail.png";
 
 import Projetos from "./Projetos.js"
 
-import projetoForm from "./projetoForm.js"
-
 import Feedback from './Feedback.js';
 
 function App() {
