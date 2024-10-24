@@ -6,6 +6,8 @@ import Github from "./asstes/github.jpg";
 
 import ilus from "./asstes/ilus.jpg";
 
+import Style from "./Style.css"
+
 export default function Main(){
     const handleClick = () => {
         window.open("https://wa.me/qr/347MNYFBV74TF1");

@@ -4,6 +4,8 @@ import tail from "./asstes/tail.png";
 
 import list from "./asstes/to-do.png";
 
+import Style from "./Style.css"
+
 export default function Projetos(){
     return(
         <main className="bg-black Projetos">

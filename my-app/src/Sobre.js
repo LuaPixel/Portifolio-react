@@ -2,6 +2,8 @@ import React, {useState} from "react";
 
 import Lua from "./asstes/Lua.jpg";
 
+import Style from "./Style.css"
+
 export default function Sobre(){
     const [showMore, setShowMore] = useState (false);
     return(
